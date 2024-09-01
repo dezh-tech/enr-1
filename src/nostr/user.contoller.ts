@@ -16,7 +16,7 @@ export class userController {
       @Headers('webhook-id') webhookId: string,
       @Body() body: any,
     ) {
-      const secret = 'wsec_WJStlX/jEqv9bLVpYPXQZcXZeDsdRIDb'; //just for test
+      const secret = 'wsec_w6OdXuLKGCPW9n4qORK8Yq6TwjnIv/+L'; //just for test
       
       const requestBody = JSON.stringify(body);
   
