@@ -19,6 +19,8 @@ export class userController {
       const secret = 'wsec_w6OdXuLKGCPW9n4qORK8Yq6TwjnIv/+L'; //just for test
       
       const requestBody = JSON.stringify(body);
+
+      console.log('request body:', requestBody)
   
       const isValid = this.verifySignature(secret, signature, webhookId, timestamp, requestBody);
   
